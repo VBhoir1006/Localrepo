@@ -1,0 +1,20 @@
+
+import random
+
+numbertoguess = random.randint(1,100)
+
+while True:
+    try:
+        guess = int(input("Guess the Number between 1 to 100: "))
+
+            
+        if guess > numbertoguess:
+            print("Too High!")
+        elif guess < numbertoguess:
+            print("Too Low!")
+        else:
+            print("Congratulation! You Guess Right Number:", numbertoguess)
+    
+    except ValueError:
+        print("❌ Invalid Input ❌")
+    
